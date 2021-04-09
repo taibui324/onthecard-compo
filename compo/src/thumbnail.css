@@ -1,0 +1,32 @@
+.img-holder1{
+    margin: auto;
+  }
+  .img1{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  #input[type="file1"] {
+      display: none;
+  }
+  .label1{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload1{
+    background-color: #000000;
+    border-radius: 50%;
+    top: 10px;
+    width: 80px;
+    margin: auto;
+    width: 90px;
+    height: 35px;
+    bottom: 90px;
+    color: white;
+    border-radius: 0px;
+
+    text-align: center;
+    cursor: pointer;
+  }

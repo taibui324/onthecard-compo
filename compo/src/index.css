@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  padding : 0;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.page{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container{
+  height: 400px;
+  width: 200px;
+  position: absolute;
+  right: 100px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  max-width: 500px;
+  padding: 50px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  
+}
+
+.img-holder{
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+#input[type="file"] {
+	display: none;
+}
+.label{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.image-upload{
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  bottom: 100px;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.material-icons{
+  text-align: left;
+}
+
+
+.Youtube {
+  text-align: center;
+}
+
+.Youtube-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Youtube-header {
+  background-color:rgba(115, 212, 236, 0.842);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(52, 220, 250);
+}
+
+.Youtube-link {
+  color: #61dafb;
+}
+
+
+    	
