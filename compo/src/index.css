@@ -128,5 +128,16 @@ code {
   color: #61dafb;
 }
 
+.react-player {
+  position: absolute;
+  bottom : 150px;
+  right: 95px;
+
+}
+
+.meme {
+  width: 100px;
+  top: 50px;
+}
 
     	
