@@ -33,7 +33,6 @@
 
 
 
-
 .circle{
   background-color: whitesmoke;
   height: 250px;
@@ -46,10 +45,10 @@
 
 .new{
   position: absolute;
-  left: 810px;
+  left: 830px;
   top: 10px;
-  bottom: 70px;
-  padding:20px;
-  width: 40px;
+  bottom: 50px;
+  padding: 10px;
+  width: 60px;
   height: 30px;
 }
