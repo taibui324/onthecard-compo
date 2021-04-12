@@ -4,7 +4,7 @@ import './App.css';
 export class Preview extends Component{
     
     state ={
-        profileImg:'https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255634-stock-illustration-avatar-icon-male-profile-gray.jpg'
+        profileImg:'http://assets.stickpng.com/images/58485538b772315a9e4dd5d9.png'
     }
     imageHandler = (e) => {
         const reader = new FileReader(); //reader = new FileReader
