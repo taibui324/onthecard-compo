@@ -1,4 +1,4 @@
-import React , { useState}from 'react'; // call state later
+import React , {useState, useEffect, useRef}from 'react'; // call state later
 import styled , { createGlobalStyle, css} from 'styled-components'; 
 import Preview from './Preview';
 import Thumbnail from './Thumbnail';
@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
 html {
   height: 100%
 }
-
 body {
   font-family: Arial;
   background: lightblue;
@@ -16,11 +15,9 @@ body {
   margin: 0;
   color: #555;
 }
-
 `;
 
 const shareStyles = css`
-
   background-color: #eee;
   height: 40px; 
   border-radius:5px;
@@ -28,7 +25,6 @@ const shareStyles = css`
   margin: 10px 0 20px 0;
   padding: 20px;
   box-sizing: border-box;
-
 `;
 
 
@@ -39,12 +35,11 @@ const StyledFormWrapper = styled.div`
   align-items: center;
   height: 100vh;
   padding: 0 20px;
-
 `;
 
 const StyledForm = styled.form`
   position: relative;
-  bottom : 650px;
+  bottom : 500px;
   right: 160px;
   width: 100%;
   max-width: 400px;
@@ -52,22 +47,12 @@ const StyledForm = styled.form`
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-
 `;
 
 const StyledInput = styled.input`
   display: block;
   width: 100%;
   ${shareStyles}
-`;
-
-
-const StyledTextArea = styled.textarea`
-  background-color: #eee;
-  width: 100%;
-  min-height: 100px;
-  resize: none;
-
 `;
 
 
@@ -82,35 +67,9 @@ height: 40px;
 padding: 0 10px;
 cursor: pointer;
 box-sizing: border-box;
-
 `;
 
 
-const StyledFieldset = styled.fieldset`
-
-border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 20px 0;
-  legend {
-    padding: 0 10px;
-  }
-  label {
-    padding-right: 20px;
-  }
-  input {
-    margin-right: 10px;
-  }
-
-`;
-
-const StyledError = styled.div`
-
-color: red;
-font-weight: 800;
-margin: 0 0 40px 0;
-
-`;
 
 
 const initialState = {
@@ -120,24 +79,14 @@ const initialState = {
 };
 
 const Form = () => {
+ 
 
     const [state, setState] = useState(initialState);
   const [error, setError] = useState('');
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log('input');
-    console.log(state);
 
-    for(let k in state ) {
-      if(state[k] === ''){
-        setError (`Provide your input ${k}`)
-        return
-      }
-    }
-    setError ('');
-    console.log('Success');
-  };
+
+  
 
   const handleInput = e => {
     const inputName = e.currentTarget.name;
@@ -147,18 +96,21 @@ const Form = () => {
   };
 
 
+
  
   
   return (
    <>
       <div className ="Form">
-    <Preview />
+    
+      <Preview />
+     
    <GlobalStyle /> 
    <StyledFormWrapper>
      <StyledForm>
-
+    
        <h2> Add Instagram User  </h2>
-     
+       
        <label htmlFor = "name"> Username</label>
 
        <StyledInput type = "text" name="name" value={state.name} onChange = {handleInput} />
@@ -169,18 +121,22 @@ const Form = () => {
 
       <label htmlFor = "description"> Description (optional)</label>
      <StyledInput name="description" value = {state.description} onChange = { handleInput} /> 
-
+    
      <label htmlFor = "description"> Image Thumbnail (size limit 10 MB)</label>
-  <Generator />
-    <Thumbnail />
-  
-    
+     <Generator />
 
     
+    <Thumbnail />
+     
+      
+
+    
+
+  
    
      </StyledForm>
-
-
+    
+    
    </StyledFormWrapper>
    </div>
 
