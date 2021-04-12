@@ -22,12 +22,13 @@ export class Preview extends Component{
                     <div className="page">
                         <div className="container">
                             <h1 className="heading">Preview</h1>
+			 <div class= "circle">
                             <div className="img-holder">
 						<img src={profileImg} alt="" id="img" className="img" />
 					</div>
 					<input type="file" accept="image/*" name="image-upload" id="input" onChange={this.imageHandler} />
 					<div className="label">
-         
+			 </div>
                     </div>   
                 
                         </div>
