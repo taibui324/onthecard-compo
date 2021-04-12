@@ -69,6 +69,9 @@ code {
   margin: auto;
   width: 150px;
   height: 150px;
+  bottom: 180px;
+  position: relative;
+  top: 25px;
   border-radius: 5px;
   margin-top: 1rem;
 }
@@ -128,6 +131,9 @@ code {
   color: #61dafb;
 }
 
+
+
+
 .react-player {
   position: absolute;
   bottom : 150px;
@@ -135,7 +141,8 @@ code {
 
 }
 
+
+
 .top{
   position: relative;
 }
-    	
