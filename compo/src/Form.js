@@ -155,7 +155,7 @@ const Form = () => {
     <Preview />
    <GlobalStyle /> 
    <StyledFormWrapper>
-     <StyledForm onSubmit= { handleSubmit}>
+     <StyledForm>
 
        <h2> Add Instagram User  </h2>
      
@@ -171,19 +171,11 @@ const Form = () => {
      <StyledInput name="description" value = {state.description} onChange = { handleInput} /> 
 
      <label htmlFor = "description"> Image Thumbnail (size limit 10 MB)</label>
+  <Generator />
     <Thumbnail />
   
     
 
-    
-    
-     {error && (
-            <StyledError>
-              <p>{error}</p>
-            </StyledError>
-          )}
-  
-  
     
    
      </StyledForm>
