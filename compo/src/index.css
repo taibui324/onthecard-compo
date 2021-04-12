@@ -135,9 +135,7 @@ code {
 
 }
 
-.meme {
-  width: 100px;
-  top: 50px;
+.top{
+  position: relative;
 }
-
     	
