@@ -2,6 +2,7 @@ import React , { useState}from 'react'; // call state later
 import styled , { createGlobalStyle, css} from 'styled-components'; 
 import Preview from './Preview';
 import Thumbnail from './Thumbnail';
+import Generator from './generator';
 
 const GlobalStyle = createGlobalStyle`
 html {
