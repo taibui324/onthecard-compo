@@ -40,3 +40,13 @@
   left: 120px;
   position: absolute;
 }
+
+.new{
+  position: absolute;
+  left: 810px;
+  top: 10px;
+  bottom: 70px;
+  padding:20px;
+  width: 40px;
+  height: 30px;
+}
