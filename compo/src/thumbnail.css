@@ -30,3 +30,13 @@
     text-align: center;
     cursor: pointer;
   }
+
+.circle{
+  background-color: whitesmoke;
+  height: 250px;
+  width:250px;
+  border-radius:50%;
+  bottom: 80px;
+  left: 120px;
+  position: absolute;
+}
